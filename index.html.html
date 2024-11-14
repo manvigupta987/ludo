@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <style>
+        .ludo{
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            width: 970px;
+        }
+        .part{
+            display:flex;
+            justify-content:center;
+        }
+    
+        .box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:1rem;
+            height: 200px;
+            padding:40px;
+        }
+        .circle{
+            height:60px;
+            width:60px;
+            margin:15px;
+        }
+        .home{
+            height:180px ;
+            width:180px;
+            display: grid;
+            grid-template-columns: repeat(2,2fr);  
+            height: 0;
+			width: 0;
+			border-left:90px solid red;
+			border-right:90px solid green;
+			border-top:90px solid yellow;
+			border-bottom:90px solid blue;
+          
+        }
+        .red{
+            border:60px solid red;
+        }
+        .yellow{
+            border:60px solid yellow;
+        }
+        .green{
+            border:60px solid green;
+        }
+        .blue{
+            border:60px solid blue;
+        }
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width:180px;
+            height:400px;
+        }
+        .tablee{
+            width:395px;
+            height: 180px;
+        }
+        .y{
+            background-color: yellow;
+        }
+        .b{
+            background-color: blue;
+        }
+        .r{
+            background-color: red;
+        }
+        .g{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="ludo">
+        <div class="first part">
+            <div class="red box">
+                <div class="r circle"></div>
+                <div class="r circle"></div>
+                <div class="r circle"></div>
+                <div class="r circle"></div>
+            </div>
+            <div class="road yell">
+                <table>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="y"></td>
+                        <td class="y"></td>
+                    </tr><tr>
+                        <td class="w"></td>
+                        <td class="y"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="y"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="y"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="y"></td>
+                        <td class="w"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="yellow box">
+                <div class="y circle"></div>
+                <div class="y circle"></div>
+                <div class="y circle"></div>
+                <div class="y circle"></div>
+            </div>
+        </div>
+        <div class="second part">
+            <div class="road yell">
+                <table class="tablee">
+                    <tr>
+                        <td class="w"></td>
+                        <td class="r"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="r"></td>
+                        <td class="r"></td>
+                        <td class="r"></td>
+                        <td class="r"></td>
+                        <td class="r"></td>
+                    </tr><tr>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home"></div>              
+            <div class="road gre">
+                <table class="tablee">
+                    <tr>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="g"></td>
+                        <td class="g"></td>
+                        <td class="g"></td>
+                        <td class="g"></td>
+                        <td class="g"></td>
+                        <td class="w"></td>
+                    </tr><tr>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="g"></td>
+                        <td class="w"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+      
+        <div class="third part">
+            <div class="blue box">
+                <div class="b circle"></div>
+                <div class="b circle"></div>
+                <div class="b circle"></div>
+                <div class="b circle"></div>
+            </div>
+            <div class="road gree">
+                <table>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="b"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="b"></td>
+                        <td class="w"></td>
+                    </tr><tr>
+                        <td class="w"></td>
+                        <td class="b"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="b"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="b"></td>
+                        <td class="b"></td>
+                        <td class="w"></td>
+                    </tr>
+                    <tr>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                        <td class="w"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="green box">
+                <div class="g circle"></div>
+                <div class="g circle"></div>
+                <div class="g circle"></div>
+                <div class="g circle"></div>
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>
